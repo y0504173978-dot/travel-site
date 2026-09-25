@@ -252,7 +252,7 @@ body.vortexing .page .stage *{backdrop-filter:none!important;-webkit-backdrop-fi
 
   /* דמות נשענת על הכרטיסייה — הגוף מאחוריה, הידיים המשולבות לפניה */
   .hero-character-body,.hero-character-hands{
-    --hero-char-y:-150px;
+    --hero-char-y:-55px;
     position:absolute;left:50%;top:50%;
     transform:translate(-50%,-100%) translateY(var(--hero-char-y));
     height:clamp(160px,26vh,260px);width:auto;max-width:none;
@@ -732,9 +732,9 @@ body.vortexing .page .stage *{backdrop-filter:none!important;-webkit-backdrop-fi
     transform:translate(-50%,-50%) rotateX(9deg) translateZ(0px) translateY(20vh);
     pointer-events:none;user-select:none;-webkit-user-drag:none;
     filter:drop-shadow(0 34px 46px rgba(0,0,0,.6));
-    animation:heroCharIn 1.5s .5s cubic-bezier(.16,1,.3,1) both;
+    animation:heroCharInOrbit 1.5s .5s cubic-bezier(.16,1,.3,1) both;
   }
-  @keyframes heroCharIn{
+  @keyframes heroCharInOrbit{
     from{opacity:0;transform:translate(-50%,-50%) rotateX(9deg) translateZ(0px) translateY(34vh)}
     to{opacity:1;transform:translate(-50%,-50%) rotateX(9deg) translateZ(0px) translateY(20vh)}
   }
